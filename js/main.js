@@ -14,7 +14,7 @@ const LB={top:["STM32","Cortex-M"],work:["dsPIC33","16-bit DSC"],path:["RS-485",
 const tls=$(".tls");let tk=0;
 const upd=()=>{tk=0;const H=root.scrollHeight-innerHeight,p=H>0?scrollY/H:0,r=tls.getBoundingClientRect();
 root.style.setProperty("--h",(220-p*100).toFixed(1));
-T.forEach((t,i)=>t.style.strokeDashoffset=1-clamp(.2+p*1.5-i*.06));
+T.forEach((t,i)=>t.style.strokeDashoffset=1-clamp(1.1+p*1.4-i*.09));
 $("#vi").style.opacity=clamp(p*3);
 $("#scene").style.transform=`translateY(${-p*150}px) scale(${1+p*.14})`;
 ch.style.transform=`rotate(${-4+p*10}deg) scale(${1+p*.12})`;

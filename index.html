@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nitish Ghadage · Embedded Firmware Engineer</title>
+<meta name="description" content="Embedded firmware for industrial IoT: STM32, dsPIC33, Modbus, RS-485 and XBee. Solar trackers, polyhouse sensor networks and Ethernet gateways.">
+<meta property="og:title" content="Nitish Ghadage · Embedded Firmware Engineer">
+<meta property="og:description" content="Firmware that keeps industrial IoT devices online in the field.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f5f6f8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔌</text></svg>">
+<script>document.documentElement.className="js";try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="pg"></div>
+<header><div class="w">
+<a class="logo" href="#top">Nitish Ghadage</a>
+<nav id="nav"><a href="#work">Work</a><a href="#path">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+<button id="theme" aria-label="Toggle light and dark theme">◐</button>
+<button id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+</div></header>
+
+<main id="top">
+<section class="hero" id="hero"><div class="w h">
+<img class="av" src="assets/me.jpg" alt="Nitish Ghadage" style="--d:0" onerror="this.remove()">
+<h1 style="--d:1">Firmware that keeps industrial devices online in the field.</h1>
+<p class="lead" style="--d:2">I’m Nitish, an embedded firmware engineer in Pune. At Sopa Systems I write STM32 and dsPIC33 firmware for solar trackers, polyhouse sensor networks and Ethernet gateways.</p>
+<div class="btns" style="--d:3"><a class="btn p" href="#work">See the work</a><a class="btn" href="#contact">Get in touch</a></div>
+<div class="sim" style="--d:4">
+<div class="sh"><b>Try it: break the link</b><small>Illustrative simulation of the heartbeat and store-and-forward pattern I use. Hover a node.</small></div>
+<div id="sg" aria-label="48 controller nodes"></div>
+<div class="sf"><button class="btn" id="drop">Drop the coordinator</button><button class="btn" id="back">Restore the link</button><p id="st" aria-live="polite">All 48 controllers are reporting.</p><span class="bfw">buffered: <b id="bf">0</b></span></div>
+</div>
+<div class="stats" style="--d:5">
+<div><b data-n="6">0</b><span>industrial products built</span></div>
+<div><b data-n="48">0</b><span>controllers per coordinator</span></div>
+<div><b data-n="1.5" data-d="1" data-p="~">0</b><span>years in a live polyhouse</span></div>
+<div><b data-n="9.17" data-d="2">0</b><span>CGPA, BE Electronics &amp; Telecom</span></div>
+</div>
+</div></section>
+
+<section id="work"><div class="w">
+<h2 class="rv">Selected work</h2>
+<div class="f rv" id="f"></div>
+<div id="grid"></div>
+</div></section>
+
+<section id="path"><div class="w">
+<h2 class="rv">Experience</h2>
+<div class="tls">
+<div class="tl rv"><small>Aug 2024 to now</small><div><h3>Embedded Developer, Sopa Systems</h3><p>Six products across four MCU families, from the first peripheral driver to on-site debugging. I also build the PC tools that make each device testable.</p></div></div>
+<div class="tl rv"><small>Feb to Mar 2023</small><div><h3>Hardware and Firmware Intern, Sopa Systems</h3><p>Worked across the hardware lifecycle of commercial IoT and UPS products, including an RFID and ZigBee authorization system for retail petrol pumps.</p></div></div>
+<div class="tl rv"><small>2020 to 2024</small><div><h3>BE Electronics &amp; Telecommunications, AISSMS IOIT</h3><p>9.17 CGPA. Second-year departmental topper.</p></div></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="w">
+<h2 class="rv">Skills</h2>
+<dl>
+<div class="rv"><dt>Firmware</dt><dd><span>Embedded C</span><span>STM32</span><span>dsPIC33</span><span>ARM Cortex-M</span><span>Interrupts and DMA</span><span>ADC</span><span>PWM</span><span>RTC</span></dd></div>
+<div class="rv"><dt>Protocols</dt><dd><span>Modbus RTU</span><span>RS-485</span><span>RS-232</span><span>UART</span><span>SPI</span><span>I2C</span><span>Ethernet</span></dd></div>
+<div class="rv"><dt>Wireless and data</dt><dd><span>XBee API mode</span><span>Telemetry</span><span>SPI flash logging</span><span>Grafana</span><span>ThingSpeak</span><span>Blynk</span></dd></div>
+<div class="rv"><dt>Tools</dt><dd><span>STM32CubeIDE</span><span>MPLAB X</span><span>KiCad</span><span>Proteus</span><span>Git</span><span>Python</span><span>Edge Impulse</span></dd></div>
+</dl>
+</div></section>
+
+<section id="contact"><div class="w">
+<p class="ct rv">Hiring for embedded firmware, industrial IoT or wireless telemetry? Let’s talk.</p>
+<div class="btns rv"><a class="btn p" id="mail" href="https://www.linkedin.com/in/nitish-ghadage/">Email me</a><button class="btn" id="copy">Copy email</button><a class="btn" href="https://www.linkedin.com/in/nitish-ghadage/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/nitu2126" target="_blank" rel="noopener">GitHub</a></div>
+</div></section>
+</main>
+<footer><div class="w">© 2026 Nitish Ghadage. Plain HTML, CSS and JavaScript.</div></footer>
+<dialog id="dlg"></dialog>
+<div id="toast" role="status"></div>
+<script src="js/main.js" defer></script>
+</body>
+</html>

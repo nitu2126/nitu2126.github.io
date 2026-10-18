@@ -8,8 +8,9 @@
 <meta property="og:title" content="Nitish Ghadage · Embedded Firmware Engineer">
 <meta property="og:description" content="Firmware that keeps industrial IoT devices online in the field.">
 <meta name="theme-color" content="#05070d">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔌</text></svg>">
-<script>document.documentElement.className="js"</script>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/me.jpg">
+<script>document.documentElement.className="js";try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"glass"}catch(e){document.documentElement.dataset.theme="glass"}</script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,12 +19,15 @@
 <nav class="g" id="nav" aria-label="Sections"><i class="th"></i><a href="#top">Home</a><a href="#work">Work</a><a href="#path">Journey</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
 
 <main>
-<section id="top" class="hero"><div class="w">
+<section id="top" class="hero"><div class="w hw">
 <div class="g pn hc h">
-<img class="av" src="assets/me.jpg" alt="Nitish Ghadage" onerror="this.remove()">
 <h1>Firmware that keeps industrial devices online in the field.</h1>
 <p class="lead">I’m Nitish, an embedded firmware engineer in Pune. At Sopa Systems I write STM32 and dsPIC33 firmware for solar trackers, polyhouse sensor networks and Ethernet gateways.</p>
 <div class="btns"><a class="btn p" href="#work">See the work</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+<div class="pf h">
+<div class="g pn ph"><img class="av" src="assets/me.jpg" alt="Nitish Ghadage" onerror="this.remove()"><div class="cap"><b>Nitish Ghadage</b><span>Embedded Firmware Engineer</span></div></div>
+<span class="g fb f1">Embedded C</span><span class="g fb f2">Modbus RTU</span><span class="g fb f3">XBee</span>
 </div>
 <div class="stats h">
 <div class="g pn"><b data-n="6">0</b><span>industrial products built</span></div>
@@ -44,7 +48,12 @@
 <div class="g pn tls rv">
 <div class="tl"><small>Aug 2024 to now</small><div><h3>Embedded Developer, Sopa Systems</h3><p>Six products across four MCU families, from the first peripheral driver to on-site debugging. I also build the PC tools that make each device testable.</p></div></div>
 <div class="tl"><small>Feb to Mar 2023</small><div><h3>Hardware and Firmware Intern, Sopa Systems</h3><p>Worked across the hardware lifecycle of commercial IoT and UPS products, including an RFID and ZigBee authorization system for retail petrol pumps.</p></div></div>
-<div class="tl"><small>2020 to 2024</small><div><h3>BE Electronics &amp; Telecommunications, AISSMS IOIT</h3><p>9.17 CGPA. Second-year departmental topper.</p></div></div>
+</div>
+<h2 class="rv s2">Education</h2>
+<div class="g pn edu rv">
+<div class="tl"><small>2020 to 2024</small><div><h3>BE Electronics &amp; Telecommunications</h3><p>AISSMS Institute of Information Technology. 9.17 CGPA and second-year departmental topper, with hackathons, project competitions and field visits. Built embedded and IoT projects including an air-quality monitor, a waste-machine automation and a cold-chain prototype.</p></div></div>
+<div class="tl"><small>Mar 2019 to Feb 2020</small><div><h3>HSC, Science (Electronics)</h3><p>Balasaheb Desai College, Patan. Grade A.<!-- add your HSC percentage here, e.g. Grade A, 00.00% --></p></div></div>
+<div class="tl"><small>Jun 2017 to Mar 2018</small><div><h3>SSC, Semi English</h3><p>Netaji Subhashchandra High School, Koyananagar. Grade A. Awarded the National Means-cum-Merit Scholarship (NMMS).<!-- add your SSC percentage here --></p></div></div>
 </div>
 </div></section>
 
@@ -65,7 +74,9 @@
 </div>
 </div></section>
 </main>
-<footer>© 2026 Nitish Ghadage. Plain HTML, CSS and JavaScript.</footer>
+<footer>© 2026 Nitish Ghadage.</footer>
+<button class="g" id="tb" aria-label="Change theme" aria-expanded="false">◐</button>
+<div class="g" id="tm" hidden><button data-t="glass">Liquid Glass</button><button data-t="black">Black</button><button data-t="white">White</button><button data-t="matte-dark">Matte Dark</button><button data-t="matte-light">Matte Light</button></div>
 <dialog id="dlg" class="g"></dialog>
 <div id="toast" class="g" role="status"></div>
 <script src="js/main.js" defer></script>
